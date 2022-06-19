@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
 import seaborn as sns
-import joblib, os
+import joblib
 
 
 
@@ -32,7 +32,7 @@ def get_key(val, my_dicts):
 ##### Load Model ########
 #########################
 def load_prediction_model(model_file):
-	loaded_model = joblib.load(open(os.path.join(model_file), 'rb'))
+	loaded_model = joblib.load(open(model_file, 'rb'))
 	return loaded_model
 
 
